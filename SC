@@ -1,0 +1,44 @@
+<head>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.5.1/plyr.css"/>
+
+<script src="https://cdn.plyr.io/3.5.1/plyr.js"></script>
+<script>/*<![CDATA[*/const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));/*]]>*/</script>
+</body>
+
++ AUDIO
+
+<audio class='js-player' controls>
+  <source src="audio.mp3" type="audio/mp3">
+</audio>
+
++ VIDEO
+
+YOUTUBE
+<div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="PZbkF-15ObM"></div>
+
+VIMEO
+<div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="247535042"></div>
+
+ONEDRIVE - GOOGLE DRIVE
+<video class='js-player' poster="thumbnail.jpg" controls playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
++ SUBTITLE
+
+<video class='js-player' poster="thumbnail.jpg" controls playsinline crossorigin>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <!-- Subtítulos -->
+  <track kind="captions" label="English" srclang="en" src="captions_en.vtt">
+  <track kind="captions" label="Español" srclang="es" src="captions_es.vtt" default>
+</video>
+
++ SIZE
+
+<video class='js-player' poster="thumbnail.jpg" controls playsinline>
+  <!-- Calidad -->
+  <source src="video_576p.mp4" size="576" type="video/mp4">
+  <source src="video_720p.mp4" size="720" type="video/mp4">
+  <source src="video_1080p.mp4" size="1080" type="video/mp4">
+</video>
